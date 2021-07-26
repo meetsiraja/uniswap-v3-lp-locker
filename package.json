@@ -14,7 +14,8 @@
     "@uniswap/lib": "^4.0.1-alpha",
     "@uniswap/v3-core": "1.0.0",
     "@uniswap/v3-periphery": "^1.0.0",
-    "base64-sol": "1.0.1"
+    "base64-sol": "1.0.1",
+    "ethereum-waffle": "^3.4.0"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",

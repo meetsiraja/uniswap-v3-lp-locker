@@ -182,7 +182,11 @@ describe('UniswapV3LPLocker', async () => {
 
     expect(lockTx)
       .to.emit(uniswapLPLocker, "LiquidityLocked")
-      .withArgs(other.address, 1, amount0, expectedERC20ToMint);;
+      .withArgs(other.address, 1, amount0, expectedERC20ToMint);
+
+    expect(lockTx)
+      .to.emit(uniswapLPLocker, "Transfer")
+      .withArgs("0x0000000000000000000000000000000000000000", other.address, expectedERC20ToMint);
 
   })
 
